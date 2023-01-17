@@ -1,0 +1,186 @@
+#header-row {
+    nav {
+        .container {
+            .row {
+                img {
+                    width: $img-width;
+                    height: $height1;
+                }
+
+                .about {
+                    @include Flexible(center,15px);
+                    list-style: none;
+                   
+                    padding: 0;
+                    margin-left: -30px;
+                    margin-top: 13px;
+
+                    .diff1 {
+                        color: $color1;
+                    }
+
+                    .diff2 {
+                        cursor: pointer;
+                        font-size: 0.87rem;
+                        color: $color2;
+                        transition: .3s ease-in-out;
+                        filter: opacity(100%);
+
+                        &:hover {
+                            filter: opacity(50%);
+                        }
+                    }
+                }
+
+                .call-back {
+                    display: flex;
+
+                    .call-back-phone {
+                        h4 {
+                            cursor: pointer;
+                            font-size:$font-size1;
+                            font-weight: $font-weight;
+                        }
+                    }
+
+                    .call-back-info {
+
+                        margin-top: 7px;
+                        margin-left: -15px;
+
+                        ul {
+                            list-style: none;
+                            cursor: pointer;
+
+                            .info1 {
+                                font-family: $font-poppins;
+                                font-size: $font-size2;
+                                line-height: 14px;
+                                color:$color2;
+                            }
+
+                            .info2 {
+                                font-family: $font-poppins;
+                                font-size: $font-size2;
+                                line-height: 14px;
+                                font-weight: $font-weight;
+                            }
+                        }
+                    }
+                }
+
+                .lang {
+                    display: flex;
+                    gap: 13px;
+                    margin-left: 30px;
+                    margin-top: 9px;
+
+                    .par1 {
+                        cursor: pointer;
+                    }
+
+                    .par2 {
+                        cursor: pointer;
+                        color: $color2;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    background-color: #3c3f42;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 5%);
+    
+
+    .container {
+        height: 64px;
+
+        .row {
+            .header-menu {
+              
+                position: relative;
+                background-color: #232222;
+                width: 314px;
+                height: 63px;
+                padding: 0 20px;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 125%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                cursor: pointer;
+                text-align: center;
+                padding-top: 18px;
+
+                span {}
+
+                i {
+                    position: absolute;
+                    left: 34px;
+                    top: 15px;
+                    font-size: 31px;
+                }
+            }
+
+            .header-search {
+                position: relative;
+                padding-top: 10px;
+
+                input {
+                    height: 40px;
+                    width: 100%;
+                    padding-left: 15px;
+                    color: #504949;
+                    font-size: 0.875rem;
+                    border-radius: 5px;
+
+
+                }
+
+                i {
+                    top: 19px;
+                    right: 19px;
+                    font-size: 20px;
+                    color: #232222;
+                    position: absolute;
+
+
+                }
+            }
+
+            .header-finish {
+                margin-left: 50px;
+                display: flex;
+                gap: 30px;
+                padding-top: 15px;
+
+                .registration {
+                    i {
+                        font-size: 25px;
+                        margin-right: 8px;
+                        color: #fff;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+
+                .icons {
+                    i {
+                        font-size: 25px;
+                        margin-right: 13px;
+                        color: #fff;
+                        padding-left: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

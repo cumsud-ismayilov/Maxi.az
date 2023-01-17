@@ -1,0 +1,6 @@
+@mixin Flexible($jus,$gap) {
+    display: flex;
+    
+    gap: $gap;
+    justify-content: $jus;
+}
